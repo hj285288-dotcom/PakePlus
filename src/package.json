@@ -1,0 +1,6 @@
+{
+  "devDependencies": {
+    "@fontsource/noto-sans-sc": "^5.2.9",
+    "subset-font": "^2.5.0"
+  }
+}
