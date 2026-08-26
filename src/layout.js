@@ -70,12 +70,13 @@
       '@keyframes layoutModalScaleIn{from{opacity:0;transform:scale(0.95) translateY(8px)}to{opacity:1;transform:scale(1) translateY(0)}}',
       '#pwd-overlay.show{animation:layoutModalFadeIn .25s cubic-bezier(0.4,0,0.2,1) both}',
       '#pwd-overlay.show > div{animation:layoutModalScaleIn .3s cubic-bezier(0.34,1.56,0.64,1) .05s both}',
-      // sidebar 样式
-      '.layout-sidebar-item{display:flex;align-items:center;width:100%;text-align:left;padding:10px 14px;font-size:13px;font-weight:500;font-family:"Plus Jakarta Sans",system-ui,sans-serif;color:#64748B;border:none;background:none;cursor:pointer;border-left:3px solid transparent;border-radius:0 8px 8px 0;transition:all .3s cubic-bezier(0.4, 0, 0.2, 1);margin-bottom:2px}',
-      '.layout-sidebar-item:hover{background:rgba(79,70,229,.04);color:#4F46E5;transform:translateX(2px)}',
+      // sidebar 样式：与 index.html 保持一致（玻璃态圆角按钮）
+      '.layout-sidebar-item{display:flex;align-items:center;width:100%;text-align:left;padding:10px 14px;font-size:13px;font-weight:500;font-family:"Plus Jakarta Sans",system-ui,sans-serif;color:#64748B;border:none;background:none;cursor:pointer;border-left:3px solid transparent;border-radius:12px;transition:transform .3s cubic-bezier(0.4, 0, 0.2, 1),background-color .3s cubic-bezier(0.4, 0, 0.2, 1);margin-bottom:2px}',
+      '.layout-sidebar-item:hover{background:rgba(255,255,255,.42);color:#334155;transform:translateX(2px);box-shadow:inset 0 1px 0 rgba(255,255,255,.55)}',
       '.layout-sidebar-item:active{transform:scale(0.97) translateX(2px)}',
-      '.layout-sidebar-item.active{background:rgba(79,70,229,.06);color:#4F46E5;border-left-color:#4F46E5;font-weight:500}',
-      '.layout-sidebar-search{width:calc(100% - 4px);background:rgba(255,255,255,.7);border:1px solid #E2E8F0;border-radius:8px;padding:4px 8px 4px 28px;font-size:12px;font-family:"Plus Jakarta Sans",system-ui,sans-serif;outline:none;transition:all .25s cubic-bezier(0.4, 0, 0.2, 1)}',
+      '.layout-sidebar-item.active{background:linear-gradient(135deg,rgba(255,255,255,.68),rgba(241,245,249,.46));color:#334155;border:1px solid rgba(148,163,184,.22);font-weight:500;box-shadow:inset 0 1px 0 rgba(255,255,255,.75),0 8px 22px rgba(100,116,139,.12);backdrop-filter:blur(10px)}',
+      '.layout-sidebar-search{width:calc(100% - 4px);background:rgba(255,255,255,.7);border:1px solid #E2E8F0;border-radius:8px;padding:4px 8px 4px 28px;font-size:12px;font-family:"Plus Jakarta Sans",system-ui,sans-serif;outline:none;transition:all .25s cubic-bezier(0.4, 0, 0.2, 1);color:transparent}',
+      '.layout-sidebar-search:hover,.layout-sidebar-search:focus{color:#0F172A}',
       '.layout-sidebar-search:focus{border-color:#818cf8;box-shadow:0 0 0 3px rgba(79,70,229,0.12)}',
       '.layout-sidebar-search::placeholder{color:#94A3B8}'
     ].join('\n');
@@ -90,7 +91,7 @@
     var aside = document.createElement('aside');
     aside.id = 'sidebar';
     aside.className = 'shrink-0 px-2 border-r border-slate-100';
-    aside.style.cssText = "width:172.8px;padding-top:22px;background:url('sidebar-bg.png') center/cover no-repeat;backdrop-filter:blur(8px);";
+    aside.style.cssText = "width:172.8px;padding-top:22px;background:linear-gradient(180deg,rgba(226,232,240,.92),rgba(203,213,225,.86)),url('sidebar-bg.png') center/cover no-repeat;backdrop-filter:blur(8px);";
 
     var _lt = (window._t || function(k){ return k; });
     var items = [
@@ -106,7 +107,7 @@
       '</div>';
     html += '<div class="relative mb-3 mx-auto" style="width:calc(100% - 4px)">' +
       '<svg class="absolute left-2.5 top-1/2 -translate-y-1/2 text-slate-400" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>' +
-      '<input id="sidebarSearch" type="text" placeholder="' + _lt('searchPh') + '" data-i18n-attr="placeholder|searchPh" class="w-full pl-8 pr-2 py-1 text-[12px] rounded-lg border border-slate-200 focus:outline-none focus:border-primary-400 focus:ring-1 focus:ring-primary-200" style="background:rgba(255,255,255,.7);">' +
+      '<input id="sidebarSearch" type="search" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" name="sidebar-search-nohist" placeholder="' + _lt('searchPh') + '" data-i18n-attr="placeholder|searchPh" class="w-full pl-8 pr-2 py-1 text-[12px] rounded-lg border border-slate-200 focus:outline-none focus:border-primary-400 focus:ring-1 focus:ring-primary-200" style="background:rgba(255,255,255,.7);color:transparent;" onmouseenter="this.style.color=\'#0F172A\'" onfocus="this.style.color=\'#0F172A\'">' +
       '</div>';
     html += '<div class="mt-5">';
     var activeIds = [page];
