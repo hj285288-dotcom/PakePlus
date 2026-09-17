@@ -1,0 +1,33 @@
+{
+  "说明": "一键加密配置。files 里列出的 JS 会被混淆加密；outputDir 是输出目录（不要用源码目录）。",
+  "outputDir": "dist",
+  "files": [
+    "motor-data.js",
+    "gaochuang-parameters.js",
+    "output-filename.js",
+    "gaochuang-generator.js",
+    "fanyi-fv5-generator.js",
+    "panasonic-generator.js",
+    "driver-parameter-doc.js",
+    "driver-parameter-table.js",
+    "motor-ui.js",
+    "database-ui.js",
+    "compensation-ui.js",
+    "cursor-fx.js"
+  ],
+  "options": {
+    "compact": true,
+    "controlFlowFlattening": true,
+    "controlFlowFlatteningThreshold": 0.75,
+    "deadCodeInjection": true,
+    "deadCodeInjectionThreshold": 0.4,
+    "stringArray": true,
+    "stringArrayThreshold": 0.75,
+    "stringArrayEncoding": ["base64"],
+    "stringArrayRotate": true,
+    "shuffleStringArray": true,
+    "identifierNamesGenerator": "hexadecimal",
+    "renameGlobals": false,
+    "target": "browser"
+  }
+}
