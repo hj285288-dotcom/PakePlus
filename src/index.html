@@ -1,0 +1,394 @@
+<!DOCTYPE html><html lang="en" style="width: 1111px; height: 700px; overflow: hidden; position: relative;"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>&#30452;&#39537;&#30005;&#26426;&#21442;&#25968;&#29983;&#25104;&#31995;&#32479;</title>
+<style data-purpose="critical-fallback"> html { background-color: #E8EAEC} html, body { margin: 0; padding: 0} body { font-family: 'Inter', system-ui, 'Segoe UI', sans-serif; background-color: #E8EAEC; color: #334155; overflow: hidden} a { color: inherit; text-decoration: inherit} button { background-color: transparent; background-image: none; border-width: 0; border-style: solid; padding: 0; margin: 0; font: inherit; color: inherit; cursor: pointer; -webkit-appearance: none; appearance: none} img { display: block} html:not(.ui-ready) body { visibility: hidden} html.ui-ready body { visibility: visible} </style>
+<script data-purpose="ui-gate">
+/* Tailwind &#29992;&#30340;&#26159; Play CDN&#65288;&#27983;&#35272;&#22120;&#31471;&#23454;&#26102;&#32534;&#35793;&#65289;&#65306;&#23427;&#35201;&#31561;&#32534;&#35793;&#23436;&#25104;&#65288;await postcss&#65289;&#20043;&#21518;&#65292;
+   &#25165;&#25226; <style> &#25554;&#36827; <head>&#12290;&#23454;&#27979;&#21407;&#36923;&#36753;&#65306;&#33050;&#26412; onload &#35302;&#21457;&#12289;&#39029;&#38754;&#24050;&#32463;&#21487;&#35265;&#26102;&#65292;&#26679;&#24335;&#34920;&#36824;&#35201; 90~110ms &#25165;&#29983;&#25104;&#65292; &#36825;&#27573;&#26102;&#38388;&#25972;&#39029;&#23436;&#20840;&#27809;&#26377;&#26679;&#24335; &#8212;&#8212; &#36825;&#23601;&#26159;"&#25991;&#23383;&#38378;&#19968;&#19979;&#32043;&#33394;&#12289;&#40831;&#36718;&#21644;&#38083;&#38107;&#22270;&#26631;&#38378;&#19968;&#19979;"&#30340;&#21407;&#22240;&#12290; &#25152;&#20197;&#38376;&#38392;&#19981;&#33021;&#25346;&#22312;&#33050;&#26412; onload &#19978;&#65292;&#24517;&#39035;&#31561;&#21040;"&#26679;&#24335;&#34920;&#24050;&#32463;&#30495;&#30340;&#29983;&#25104;"&#20877;&#25918;&#34892;&#12290; */ (function () { var root = document.documentElement; var MARK = '7533917'; var done = false, t0 = 0; function reveal() { if (done) return; done = true; var probe = document.getElementById('ui-gate-probe'); if (probe && probe.parentNode) probe.parentNode.removeChild(probe); root.classList.add('ui-ready')} window.__revealUI = reveal; function has(needle) { var list = document.head ? document.head.getElementsByTagName('style') : []; for (var i = 0; i < list.length; i++) { var css = list[i].textContent || ''; if (css.length > 3000 && css.indexOf(needle) !== -1) return true} return false} function start() { if (done) return; if (!document.body) { setTimeout(start, 12); return} t0 = Date.now(); var probe = document.createElement('i'); probe.id = 'ui-gate-probe'; probe.className = 'z-[' + MARK + ']'; probe.setAttribute('aria-hidden', 'true'); probe.style.cssText = 'position:absolute;left:-9999px;top:0;width:0;height:0;visibility:hidden;'; document.body.appendChild(probe); (function poll() { if (has(MARK)) { reveal(); return} if (Date.now() - t0 > 900 && has('.text-xs')) { reveal(); return} if (Date.now() - t0 > 2500) { reveal(); return} setTimeout(poll, 12)})()} if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', start); else start()})(); </script> <link href="./fonts/inter.css" rel="stylesheet"> <link rel="stylesheet" href="./cursor-fx.css"> <script src="./tailwind.min.js" onerror="window.__revealUI&&window.__revealUI()"></script> <script defer src="./cursor-fx.js"></script> <script data-purpose="tauri-winstrip"> (function () { function init() { if (!('__TAURI__' in window) || !window.__TAURI__) return; document.documentElement.classList.add('tauri'); var win = null; try { win = window.__TAURI__.window.getCurrentWindow()} catch (e) { win = null} var strip = document.getElementById('win-strip'); if (!strip) return; strip.querySelectorAll('.win-btn').forEach(function (btn) { btn.addEventListener('click', function (e) { e.stopPropagation(); if (!win) return; var act = btn.getAttribute('data-act'); try { if (act === 'min') win.minimize(); else if (act === 'close') win.close()} catch (err) { } })}); strip.addEventListener('mousedown', function (e) { if (e.target.closest('.win-btn')) return; if (!win) return; try { win.startDragging()} catch (err) { } }); strip.addEventListener('dblclick', function (e) { if (e.target.closest('.win-btn')) return; if (!win) return; try { win.toggleMaximize()} catch (err) { } })} if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init); else init()})(); </script> <style data-purpose="custom-styles"> body { font-family: 'Inter', sans-serif; background-color: #dbe0e6; color: #334155} svg { width: 16px; height: 16px; display: block} ::-webkit-scrollbar { width: 5px; height: 5px; background: #f8fafc} ::-webkit-scrollbar-button { display: none; width: 0; height: 0; background: transparent} ::-webkit-scrollbar-track { background: #f8fafc; border-radius: 8px} ::-webkit-scrollbar-track-piece { background: #f8fafc} ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 8px} ::-webkit-scrollbar-corner { background: #f8fafc} #database-page .col-span-3:not(.card-vignette), #database-page .col-span-9:not(.card-vignette) { box-shadow: none !important} .custom-select { position: relative; width: 100%} .custom-select-native { position: absolute !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important} .custom-select-button { display: flex; align-items: center; justify-content: space-between; width: 100%; text-align: left; cursor: pointer !important} .custom-select-menu { position: absolute; left: 0; right: 0; top: calc(100% + 4px); z-index: 100; display: none; max-height: 220px; overflow-y: auto; padding: 4px; background: #fff; border: 1px solid #e2e8f0; border-radius: 12px; box-shadow: 0 10px 24px rgba(15, 23, 42, .12)} .custom-select.is-open .custom-select-menu { display: block} .custom-select-option { display: block; width: 100%; padding: 8px 10px; border: 0; border-radius: 8px; background: transparent; color: #334155; font-size: 12px; line-height: 1.25; text-align: left; cursor: pointer !important} .custom-select-option:hover, .custom-select-option.is-selected { background: #f8fafc} .brand-menu{opacity:0;visibility:hidden;pointer-events:none;transform:translateY(-6px);transition:opacity .32s cubic-bezier(.16,1,.3,1),transform .32s cubic-bezier(.16,1,.3,1),visibility 0s linear .32s}.brand-menu.open{opacity:1;visibility:visible;pointer-events:auto;transform:translateY(0);transition-delay:0s}.brand-menu.is-closed{opacity:0!important;visibility:hidden!important;pointer-events:none!important;transform:translateY(-6px)!important;transition-delay:0s}@media (prefers-reduced-motion:reduce){.brand-menu{transition:none}}.driver-series-menu{opacity:0;visibility:hidden;pointer-events:none;transform:translateY(-6px);transition:opacity .32s cubic-bezier(.16,1,.3,1),transform .32s cubic-bezier(.16,1,.3,1),visibility 0s linear .32s}.driver-series-menu.open{opacity:1;visibility:visible;pointer-events:auto;transform:translateY(0);transition-delay:0s}.driver-series-option{padding:9px 10px;border-radius:10px;color:#334155;font-size:12px;font-weight:600;cursor:pointer}.driver-series-option:hover{background:#f8fafc}@media (prefers-reduced-motion:reduce){.driver-series-menu{transition:none}} .driver-data-nav{margin-top:16px;padding-top:16px;border-top:1px solid #f1f5f9}.driver-data-nav>summary{margin-bottom:12px}.driver-data-nav button{width:100%;text-align:left;border:0;cursor:pointer;background:transparent}.driver-data-nav>div{display:grid;gap:4px}.driver-data-nav details>summary{list-style:none}.driver-data-nav details>summary::-webkit-details-marker{display:none}.driver-data-nav .driver-series-option{padding:9px 10px;border-radius:10px;color:#64748b;font-size:11px;font-weight:500;display:flex;align-items:center}.driver-data-nav .driver-series-option:hover{background:#f8fafc;color:#334155}.driver-data-nav .driver-series-option.active{background:#0f172a;color:#fff;font-weight:600}.driver-data-nav .driver-series-option.active::after{content:"\2192";margin-left:auto;flex-shrink:0;color:#fff;font-size:13px;font-weight:700;line-height:1}.driver-filter-card select{-webkit-appearance:none;appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='9' height='5' viewBox='0 0 9 5'%3E%3Cpath d='M0.75 1L4.5 4L8.25 1' fill='none' stroke='%23334155' stroke-width='0.55'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 8.12px center;height:35px;padding-left:16px;padding-right:22px}.driver-filter button{border:1px solid #e2e8f0;background:#fff;color:#64748b}.driver-filter button.active{border-color:#fed7aa;background:#fff7ed;color:#c2410c}.driver-parameter-table .row-shared{background:#f0fdf4}.driver-parameter-table .row-config{background:#fffaf0}.driver-parameter-table .row-fixed{background:#f8fafc}#driver-table tbody tr{cursor:pointer;transition:background-color .12s ease}#driver-table tbody tr:hover{background:#e2e8f0}#driver-table tbody tr.is-selected{border-color:#0f172a;background:#0f172a}#driver-table tbody tr.is-selected:hover{background:#0f172a}#driver-table tbody tr.is-selected td{color:#fff}#database-body tr{cursor:pointer;transition:background-color .12s ease}#database-body tr:hover{background:#e2e8f0}#database-body tr.is-selected{border-color:#0f172a;background:#0f172a}#database-body tr.is-selected:hover{background:#0f172a}#database-body tr.is-selected td{color:#fff}#database-body tr.is-selected button[data-action="edit"]{color:#93c5fd}#database-body tr.is-selected button[data-action="edit"]:hover{color:#bfdbfe}#database-body tr.is-selected button[data-action="delete"]{color:#fca5a5}#database-body tr.is-selected button[data-action="delete"]:hover{color:#fecaca} .comp-seg{border-width:1px;border-style:solid;border-color:#e2e8f0;background:#fff;color:#64748b;border-radius:6px;padding:6px 12px;font-size:11px;font-weight:600;transition:border-color .15s,background-color .15s,color .15s}.comp-seg:not(:disabled):hover{border-color:#cbd5e1;color:#334155}.comp-seg.on{border-color:#fed7aa;background:#fff7ed;color:#c2410c} #comp-open{border-width:1px;border-style:solid;border-color:#0f172a;background:#0f172a;color:#fff;border-radius:6px;box-shadow:none;transition:background-color .15s,border-color .15s} #comp-open:hover{background:#1e293b;border-color:#1e293b} #comp-invert{border-width:1px;border-style:solid;border-color:#0f172a;background:#0f172a;color:#fff;border-radius:6px;padding:4px 9px;font-size:11px;font-weight:600;white-space:nowrap;transition:background-color .15s,border-color .15s} #comp-invert:not(:disabled):hover{background:#1e293b;border-color:#1e293b} #comp-invert.on{border-color:#f97316;background:#f97316} #comp-invert.on:hover{background:#ea580c;border-color:#ea580c} #comp-invert:disabled{opacity:.45;cursor:not-allowed} #comp-export{border-width:1px;border-style:solid;border-color:#f97316;background:#f97316;color:#fff;border-radius:6px;padding:4px 10px;font-size:11px;font-weight:600;white-space:nowrap;box-shadow:none;transition:background-color .15s,border-color .15s} #comp-export:not(:disabled):hover{background:#ea580c;border-color:#ea580c} #comp-export:disabled{opacity:.45;cursor:not-allowed} #comp-chart svg{width:100%;height:100%;display:block} #comp-scroll table{font-size:var(--comp-font,11px)} #comp-scroll td{font-size:var(--comp-font,11px);line-height:var(--comp-line,14px);padding-left:var(--comp-pad,8px);padding-right:var(--comp-pad,8px)} #comp-scroll th{font-size:var(--comp-head-font,11px);line-height:var(--comp-head-line,14px);font-weight:400;padding-left:var(--comp-pad,8px);padding-right:var(--comp-pad,8px)} #comp-scroll tbody tr{height:var(--comp-row-h,18px)} #comp-body tr{cursor:pointer;transition:background-color .12s ease} #comp-body tr:hover{background:#e2e8f0} #comp-body tr.is-selected{border-color:#0f172a;background:#0f172a} #comp-body tr.is-selected:hover{background:#0f172a} #comp-body tr.is-selected td{color:#fff} .card-vignette.card-vignette{box-shadow:0 12px 24px rgba(100,116,139,.16),inset 10px 0 18px rgba(148,163,184,.05),inset -10px 0 18px rgba(148,163,184,.05),inset 0 -12px 18px rgba(148,163,184,.08)} .comp-seg+ .comp-seg{margin-left:-6px} svg { width: 16px; height: 16px; display: block} </style>
+<style> #generation-progress .progress-segment{background-color:#e2e8f0;opacity:.6;transform:scaleY(1);transform-origin:bottom;transition:background-color .16s ease,opacity .16s ease,transform .16s cubic-bezier(.16,1,.3,1)} #generation-progress .progress-segment.is-filled{background-color:#f97316!important;opacity:1;transform:scaleY(1)} #generation-progress > div:not(.progress-segment){background-color:#e2e8f0!important;opacity:.6} #generation-progress > div:not(.progress-segment):nth-child(-n+4){background-color:#f97316!important;opacity:1} #generation-progress.is-success .progress-segment{background-color:#22c55e!important;transition-delay:calc(var(--progress-index) * 10ms)} @media (prefers-reduced-motion:reduce){#generation-progress .progress-segment{transition:none}#generation-progress.is-success .progress-segment{transition-delay:0s}} #hall-sensor-card::before{content:none} #hall-sensor-card::after{content:"";position:absolute;z-index:0;right:-8%;top:-32%;width:72%;height:108%;border-radius:50%;background:radial-gradient(ellipse at center,rgba(255,255,255,.16),transparent 68%);transform:rotate(-20deg);pointer-events:none} #hall-sensor-halftone{position:absolute;inset:0;z-index:1;width:100%;height:100%;pointer-events:none;mix-blend-mode:screen;opacity:.9} html.tauri #win-strip{display:block} #win-strip{display:none;position:fixed;top:0;left:0;right:0;height:16px;z-index:9999;user-select:none;cursor:default} #win-strip .win-btns{position:absolute;top:0;right:6px;height:16px;display:flex;align-items:center;gap:2px;opacity:0;transition:opacity .18s ease} #win-strip:hover .win-btns{opacity:1} .win-btn{height:14px;min-width:26px;display:flex;align-items:center;justify-content:center;border:0;border-radius:4px;background:transparent;color:#64748b;cursor:pointer;font-size:11px;line-height:1;padding:0 4px;font-family:'Inter','Segoe UI',system-ui,sans-serif} .win-btn:hover{background:#D3D9E0;color:#334155} .win-btn.win-close:hover{background:#E5484D;color:#fff} </style>
+</head>
+<body class="w-[1100px] h-[700px] max-w-[1100px] max-h-[700px] overflow-hidden select-none" style="background-color: #E8EAEC; margin: 0; padding: 0;">
+<!-- BEGIN: PakePlus 无边框窗口控制条（隐形悬浮层，仅 Tauri 环境显示） -->
+<div id="win-strip" aria-hidden="true">
+  <div class="win-btns">
+    <button class="win-btn" data-act="min" title="最小化" aria-label="最小化">&#x2013;</button>
+    <button class="win-btn win-close" data-act="close" title="关闭" aria-label="关闭">&#x2715;</button>
+  </div>
+</div>
+<!-- END: PakePlus 无边框窗口控制条 -->
+<!-- BEGIN: Main Dashboard Container (Fixed 1100px x 700px) -->
+<div class="w-full h-full flex flex-col relative overflow-hidden" style="background-color: rgb(232, 234, 236);">
+<!-- BEGIN: Top Navigation -->
+<header class="flex items-center justify-between px-6 py-4 flex-shrink-0">
+<!-- Logo -->
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 bg-orange-500 rounded-lg flex items-center justify-center text-white font-bold text-lg rounded-tr-none rounded-bl-none shadow-sm">
+<svg width="16" height="16" style="width:16px;height:16px;display:block" class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14.5v-9l6 4.5-6 4.5z"></path></svg>
+</div>
+<span class="font-bold text-base tracking-wider text-slate-800">Moen/SHANGSHUN</span>
+</div>
+<!-- Navigation Links -->
+<nav id="global-nav" class="flex gap-6 font-medium text-xs text-slate-500">
+<a id="parameter-nav" data-page="parameter" class="global-nav-link text-slate-800 border-b border-[#87CEEB] px-[5px] pb-0.5 font-semibold" href="index.html">&#21442; &#25968;</a>
+<a data-page="compensation" class="global-nav-link hover:text-slate-800 transition-colors pb-0.5" href="#">&#34917; &#20607;</a>
+<a id="database-nav" data-page="database" class="global-nav-link hover:text-slate-800 transition-colors pb-0.5" href="database.html">&#25968;&#25454;&#24211;</a>
+<a data-page="export" class="global-nav-link hover:text-slate-800 transition-colors pb-0.5" href="#">&#23548; &#20986;</a>
+<a data-page="settings" class="global-nav-link hover:text-slate-800 transition-colors pb-0.5" href="#">&#35774; &#32622;</a>
+</nav>
+<!-- Right Actions -->
+<div class="flex items-center gap-3">
+<!-- Search -->
+<div class="relative">
+<input id="motor-search" name="motor-search-current" autocomplete="off" class="w-52 bg-white rounded-full py-1.5 pl-4 pr-8 text-xs focus:outline-none shadow-sm border-none placeholder-slate-400" placeholder="搜索电机型号" type="text">
+<svg class="w-3.5 h-3.5 absolute right-3 top-2 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</div>
+<!-- Icons -->
+<button class="w-8 h-8 bg-white rounded-full flex items-center justify-center shadow-sm text-slate-500 hover:text-slate-700 transition-colors">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path><path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</button>
+<button class="w-8 h-8 bg-white rounded-full flex items-center justify-center shadow-sm text-slate-500 hover:text-slate-700 transition-colors">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</button>
+<!-- Profile -->
+<img alt="User Profile" class="w-8 h-8 rounded-full object-cover shadow-sm border border-white" src="./meining.jpg">
+</div>
+</header>
+<!-- END: Top Navigation -->
+<!-- BEGIN: Main Content Area -->
+<main class="flex-1 px-6 pb-5 pt-1 grid grid-cols-12 gap-5 min-h-0 overflow-hidden">
+<!-- BEGIN: Left Column (7 of 12 cols) -->
+<div class="col-span-7 flex flex-col justify-between h-full min-h-0">
+<!-- Top Card: 电机性能参数 -->
+<section class="relative top-[5px] mx-[5px] bg-white rounded-2xl shadow-sm px-6 py-4 flex flex-col justify-between overflow-hidden" style="height: 323px; box-shadow: 0 12px 24px rgba(100, 116, 139, 0.16), inset 10px 0 18px rgba(148, 163, 184, 0.05), inset -10px 0 18px rgba(148, 163, 184, 0.05), inset 0 -12px 18px rgba(148, 163, 184, 0.08);">
+<div class="flex justify-between items-center pb-1">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 bg-slate-100 rounded-lg flex items-center justify-center text-slate-700">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</div>
+<h2 class="text-lg font-bold text-slate-800 tracking-tight">&#30005;&#26426;&#24615;&#33021;&#21442;&#25968;</h2>
+</div>
+<button class="flex items-center gap-1.5 border border-slate-200 rounded-full px-3 py-1 text-xs font-medium text-slate-600 hover:bg-slate-50 transition-colors">
+            &#30452;&#32447;&#30005;&#26426;
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</button>
+</div>
+<div class="grid grid-cols-2 gap-x-8 my-auto pt-1">
+<div class="flex flex-col gap-y-2.5">
+<div class="flex justify-between items-center border-b border-slate-100 pb-1.5"><span class="text-xs text-slate-500">&#23792;&#20540;&#25512;&#21147;</span><span data-parameter="峰值推力" class="text-xs font-semibold text-slate-700">-- N</span></div>
+<div class="flex justify-between items-center border-b border-slate-100 pb-1.5"><span class="text-xs text-slate-500">&#30005;&#26426;&#21147;&#24120;&#25968;</span><span data-parameter="电机力常数" class="text-xs font-semibold text-slate-700">-- N/A</span></div>
+<div class="flex justify-between items-center border-b border-slate-100 pb-1.5"><span class="text-xs text-slate-500">&#23792;&#20540;&#30005;&#27969;</span><span data-parameter="峰值电流" class="text-xs font-semibold text-slate-700">-- Arms</span></div>
+<div class="flex justify-between items-center border-b border-slate-100 pb-1.5"><span class="text-xs text-slate-500">&#21453;&#30005;&#21160;&#21183;&#24120;&#25968;</span><span data-parameter="反电动势常数" class="text-xs font-semibold text-slate-700">-- V/m/s</span></div>
+<div class="flex justify-between items-center border-b border-slate-100 pb-1.5"><span class="text-xs text-slate-500">&#21333;&#30456;&#30005;&#24863;</span><span data-parameter="单相电感" class="text-xs font-semibold text-slate-700">-- mH</span></div>
+<div class="flex justify-between items-center border-b border-slate-100 pb-1.5"><span class="text-xs text-slate-500">&#30005;&#26426;&#21560;&#24341;&#21147;</span><span data-parameter="电机吸引力" class="text-xs font-semibold text-slate-700">-- N</span></div>
+</div>
+<div class="flex flex-col gap-y-2.5">
+<div class="flex justify-between items-center border-b border-slate-100 pb-1.5"><span class="text-xs text-slate-500">&#25345;&#32493;&#25512;&#21147;</span><span data-parameter="持续推力" class="text-xs font-semibold text-slate-700">-- N</span></div>
+<div class="flex justify-between items-center border-b border-slate-100 pb-1.5"><span class="text-xs text-slate-500">&#30005;&#26426;&#24120;&#25968;</span><span data-parameter="电机常数" class="text-xs font-semibold text-slate-700">-- N/&#8730;W</span></div>
+<div class="flex justify-between items-center border-b border-slate-100 pb-1.5"><span class="text-xs text-slate-500">&#25345;&#32493;&#30005;&#27969;</span><span data-parameter="持续电流" class="text-xs font-semibold text-slate-700">-- Arms</span></div>
+<div class="flex justify-between items-center border-b border-slate-100 pb-1.5"><span class="text-xs text-slate-500">&#21333;&#30456;&#30005;&#38459;</span><span data-parameter="单相电阻" class="text-xs font-semibold text-slate-700">-- &#937;</span></div>
+<div class="flex justify-between items-center border-b border-slate-100 pb-1.5"><span class="text-xs text-slate-500">&#32447;&#22280;&#37325;&#37327;</span><span data-parameter="线圈重量" class="text-xs font-semibold text-slate-700">-- kg</span></div>
+<div class="flex justify-between items-center border-b border-slate-100 pb-1.5"><span class="text-xs text-slate-500">&#30913;&#33410;&#36317;</span><span data-parameter="磁节距" class="text-xs font-semibold text-slate-700">-- mm</span></div>
+</div>
+</div>
+</section>
+<!-- Bottom Row: 项目范围与支持 + 生成参数文件 -->
+<div class="grid grid-cols-2 gap-4 h-[255px] mt-4">
+<!-- 项目范围与支持 -->
+<section class="mx-[5px] flex flex-col justify-between">
+<div class="flex justify-between items-center" style="transform: translateY(10px);">
+<h3 class="text-base font-bold text-slate-800">&#32534;&#30721;&#22120;&#21453;&#39304;&#36873;&#25321;</h3>
+</div>
+<div class="relative top-[20px] px-[5px] flex flex-col justify-between gap-[6px] flex-1 mb-[37px]">
+<!-- Item 1 -->
+<div class="rounded-2xl p-2 px-3 flex items-center justify-between shadow-sm bg-transparent" style="border: 0.75px solid rgba(203, 213, 225, 0.85); border-radius: 20px;">
+<div class="flex items-center gap-2.5">
+<div class="w-9 h-9 bg-slate-200/80 rounded-full flex items-center justify-center text-slate-600 flex-shrink-0">
+<span id="encoder-type-icon-status" class="w-3 h-3 rounded-full bg-orange-500"></span>
+</div>
+<div>
+<div class="flex items-center gap-1.5">
+<span class="font-bold text-xs text-slate-800">&#32534;&#30721;&#22120;&#31867;&#22411;</span>
+<span id="active-encoder-type" class="text-xs font-medium text-slate-500"></span>
+</div>
+<span class="text-[10px] text-slate-500 block leading-tight">Encoder Type</span>
+</div>
+</div>
+<button id="encoder-type-trigger" class="w-6 h-6 bg-transparent flex items-center justify-center text-slate-500 hover:text-slate-700 transition-colors flex-shrink-0 border-none shadow-none"><svg class="w-4 h-4 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></button>
+</div>
+<div id="encoder-type-menu" class="driver-series-menu absolute z-30 bg-white rounded-2xl shadow-xl p-2" style="top: calc(100% + 6px); left: 0; right: auto; width: 240px;"></div>
+<div id="encoder-resolution-card" class="rounded-2xl p-2 px-3 flex items-center justify-between shadow-sm bg-transparent" style="border: 0.75px solid rgba(203, 213, 225, 0.85); border-radius: 20px;">
+<div class="flex items-center gap-2.5">
+<div class="w-9 h-9 bg-slate-200/80 rounded-full flex items-center justify-center text-slate-600 flex-shrink-0">
+<span id="encoder-resolution-icon-status" class="w-3 h-3 rounded-full bg-orange-500"></span>
+</div>
+<div>
+<div class="flex items-center gap-1.5">
+<span class="font-bold text-xs text-slate-800">&#32534;&#30721;&#22120;&#20998;&#36776;&#29575;</span>
+<span id="active-encoder-resolution" class="text-xs font-medium text-slate-500"></span>
+</div>
+<span class="text-[10px] text-slate-500 block leading-tight">Encoder Resolution</span>
+</div>
+</div>
+<button class="w-6 h-6 bg-transparent flex items-center justify-center text-slate-500 hover:text-slate-700 transition-colors flex-shrink-0 border-none shadow-none"><svg class="w-4 h-4 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></button>
+</div>
+<div id="encoder-sincos-pitch-card" class="rounded-2xl p-2 px-3 flex items-center justify-between shadow-sm bg-transparent" style="display:none;border: 0.75px solid rgba(203, 213, 225, 0.85); border-radius: 20px;">
+<div class="flex items-center gap-2.5"><div class="w-9 h-9 bg-slate-200/80 rounded-full flex items-center justify-center text-slate-600 flex-shrink-0"><span id="encoder-sincos-pitch-icon-status" class="w-3 h-3 rounded-full bg-orange-500"></span></div><div><div class="flex items-center gap-1.5"><span class="font-bold text-xs text-slate-800">&#26629;&#23610;&#26629;&#36317;</span></div><span class="text-[10px] text-slate-500 block leading-tight">Scale Pitch</span></div></div><div class="relative w-24 -left-[15px]"><input id="encoder-sincos-pitch-input" type="text" inputmode="decimal" autocomplete="off" class="text-xs font-bold text-slate-800 w-full bg-transparent border-0 border-b border-slate-300 pl-1 pr-7 py-1 text-right outline-none focus:border-orange-400"><span class="absolute right-1 bottom-1 text-xs font-bold text-slate-800 pointer-events-none">&#956;m</span></div>
+</div>
+<div id="encoder-sincos-interpolation-card" class="rounded-2xl p-2 px-3 flex items-center justify-between shadow-sm bg-transparent" style="display:none;border: 0.75px solid rgba(203, 213, 225, 0.85); border-radius: 20px;">
+<div class="flex items-center gap-2.5"><div class="w-9 h-9 bg-slate-200/80 rounded-full flex items-center justify-center text-slate-600 flex-shrink-0"><span id="encoder-sincos-interpolation-icon-status" class="w-3 h-3 rounded-full bg-orange-500"></span></div><div><div class="flex items-center gap-1.5"><span class="font-bold text-xs text-slate-800">&#30005;&#26426;&#27491;&#24358;&#25554;&#20540;</span></div><span class="text-[10px] text-slate-500 block leading-tight">Motor Sine Interpolation</span></div></div><div class="relative w-24 -left-[15px]"><input id="encoder-sincos-interpolation-input" type="text" inputmode="decimal" autocomplete="off" class="text-xs font-bold text-slate-800 w-full bg-transparent border-0 border-b border-slate-300 pl-1 pr-7 py-1 text-right outline-none focus:border-orange-400"><span class="absolute right-1 bottom-1 text-xs font-bold text-slate-800 pointer-events-none">Bit</span></div>
+</div>
+<!-- Item 2 -->
+<div id="encoder-bissc-card" class="rounded-2xl p-2 px-3 flex items-center justify-between shadow-sm bg-transparent" style="border: 0.75px solid rgba(203, 213, 225, 0.85); border-radius: 20px;">
+<div class="flex items-center gap-2.5">
+<div class="w-9 h-9 bg-slate-200/80 rounded-full flex items-center justify-center text-slate-600 flex-shrink-0">
+<span id="encoder-bissc-icon-status" class="w-3 h-3 rounded-full bg-orange-500"></span>
+</div>
+<div>
+<div class="flex items-center gap-1.5">
+<span class="font-bold text-xs text-slate-800">BISS-C &#25968;&#25454;&#38271;&#24230;</span>
+<span id="active-encoder-bissc" class="text-xs font-medium text-slate-500"></span>
+</div>
+<span class="text-[10px] text-slate-500 block leading-tight">BiSS&#8209;C Data Length</span>
+</div>
+</div>
+<button class="w-6 h-6 bg-transparent flex items-center justify-center text-slate-500 hover:text-slate-700 transition-colors flex-shrink-0 border-none shadow-none"><svg class="w-4 h-4 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></button>
+</div>
+</div>
+</section>
+<!-- 生成参数文件 -->
+<section id="hall-sensor-card" class="rounded-2xl p-4 shadow-sm relative overflow-hidden flex flex-col justify-between mr-[5px] mb-[5px]" style="background-color: #D0D6DD; border: 1px solid #C4CBD3;">
+<canvas id="hall-sensor-halftone" aria-hidden="true"></canvas>
+<div class="relative z-10">
+<h3 class="text-base font-bold text-slate-800 mb-1">&#26159;&#21542;&#21551;&#29992;&#38669;&#23572;&#20256;&#24863;&#22120;</h3>
+<div class="flex items-center gap-2 mt-2" id="hall-sensor-toggle-group"><label id="hall-sensor-yes-label" class="flex items-center justify-center gap-2 px-5 py-2 min-w-[70px] bg-white/70 hover:bg-white text-slate-600 rounded-xl text-sm font-medium cursor-pointer border border-slate-300 transition-colors"><input id="hall-sensor-yes" type="radio" name="hall_sensor" value="yes" class="w-4 h-4 text-orange-500 focus:ring-0 border-slate-400"><span class="">&#26159;</span></label><label class="flex items-center justify-center gap-2 px-5 py-2 min-w-[120px] bg-slate-800 text-white rounded-xl text-sm font-semibold cursor-pointer shadow-sm"><input type="radio" name="hall_sensor" value="no" checked="" class="w-4 h-4 text-orange-500 focus:ring-0 border-slate-400"><span class="">&#21542;</span></label></div>
+</div>
+<button class="bg-white rounded-full px-4 py-2.5 flex items-center justify-between w-full shadow-sm hover:shadow-md transition-shadow relative z-10">
+<span class="font-semibold text-xs text-slate-800">&#29983;&#25104;&#37197;&#32622;&#25688;&#35201;</span>
+<svg class="w-3.5 h-3.5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</button>
+<div class="absolute bottom-0 right-0 w-3/4 h-1/2 bg-gradient-to-tl from-slate-300/40 to-transparent rounded-tl-full blur-lg pointer-events-none"></div>
+</section>
+</div>
+</div>
+<!-- END: Left Column -->
+<!-- BEGIN: Right Column (5 of 12 cols) -->
+<div class="col-span-5 flex flex-col justify-between h-full min-h-0">
+<!-- Top Card: 支持的驱动器品牌 -->
+<section class="mr-[5px] flex flex-col flex-1">
+<div class="flex justify-between items-center mb-2">
+<h2 class="text-lg font-bold text-slate-800">&#25903;&#25345;&#30340;&#39537;&#21160;&#22120;&#21697;&#29260;</h2>
+</div>
+<div class="relative group brand-group" style="background-color: transparent; border: 1px solid transparent; border-radius: 1rem;">
+<div class="rounded-2xl p-3.5 flex justify-between items-center cursor-pointer hover:bg-slate-50/50 transition-colors">
+<div class="flex items-center gap-3">
+<div id="active-brand-code" class="w-9 h-9 bg-orange-500 rounded-xl flex items-center justify-center text-white font-bold text-xs">GC</div>
+<div>
+<div class="flex items-center gap-2">
+<h4 id="active-brand-name" class="font-bold text-xs text-slate-800">&#39640;&#21019; (Servotronix)</h4>
+<span class="bg-slate-800 text-white text-[9px] font-bold px-2 py-0.5 rounded-full uppercase tracking-wider">&#24050;&#28608;&#27963;</span>
+<img id="active-brand-image" class="w-20 h-10 object-contain ml-3" style="transform: scale(1.3); transform-origin: left center;" src="gaochuang.png" alt="高创">
+</div>
+
+</div>
+</div>
+<svg class="w-4 h-4 text-slate-400 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</div>
+<!-- Dropdown items -->
+<div class="absolute top-full left-0 w-full mt-0 bg-white border border-slate-200 rounded-2xl shadow-xl z-20 brand-menu overflow-hidden">
+<div class="brand-option flex items-center gap-2.5 p-2.5 hover:bg-slate-50 cursor-pointer border-b border-slate-100" data-code="GC" data-name="高创 (Servotronix)" data-series="CDHD2S / LDHD2">
+<div class="w-7 h-7 bg-orange-500 rounded-lg flex items-center justify-center text-white font-bold text-[10px]">GC</div>
+<div>
+<div class="font-bold text-slate-800 text-xs">&#39640;&#21019; (Servotronix)</div>
+<div class="text-[9px] text-slate-500">CDHD2S / LDHD2</div>
+</div>
+</div>
+<div class="brand-option flex items-center gap-2.5 p-2.5 hover:bg-slate-50 cursor-pointer border-b border-slate-100" data-code="FY" data-name="繁易 (Flexem)" data-series="FV5 / FD5">
+<div class="w-7 h-7 bg-slate-200 rounded-lg flex items-center justify-center text-slate-700 font-bold text-[10px]">FY</div>
+<div>
+<div class="font-bold text-slate-800 text-xs">&#32321;&#26131; (Flexem)</div>
+<div class="text-[9px] text-slate-500">FV5 / FD5</div>
+</div>
+</div>
+<div class="brand-option flex items-center gap-2.5 p-2.5 hover:bg-slate-50 cursor-pointer border-b border-slate-100" data-code="PX" data-name="松下 (Panasonic)" data-series="A6">
+<div class="w-7 h-7 bg-blue-400 rounded-lg flex items-center justify-center text-white font-bold text-[10px]">PX</div>
+<div>
+<div class="font-bold text-slate-800 text-xs">&#26494;&#19979; (Panasonic)</div>
+<div class="text-[9px] text-slate-500">A6</div>
+</div>
+</div>
+<div class="brand-option flex items-center gap-2.5 p-2.5 hover:bg-slate-50 cursor-pointer" data-code="MT" data-name="三菱 (Mitsubishi)" data-series="MR-J4/J5">
+<div class="w-7 h-7 bg-slate-800 rounded-lg flex items-center justify-center text-white font-bold text-[10px]">MT</div>
+<div>
+<div class="font-bold text-slate-800 text-xs">&#19977;&#33777; (Mitsubishi)</div>
+<div class="text-[9px] text-slate-500">MR-J4/J5</div>
+</div>
+</div>
+</div>
+</div><div class="relative mt-3 rounded-2xl p-3 bg-transparent border-none" style="border: medium;"><div class="flex items-center justify-between gap-3"><div class="relative left-[21px] flex flex-col justify-center"><span class="text-xs font-bold text-slate-700">&#39537;&#21160;&#22120;&#31995;&#21015;</span><span class="text-[10px] text-[#64748B] font-normal leading-tight">Driver Series</span></div><div id="driver-series-trigger" class="relative -left-[21px] flex items-center justify-between bg-transparent border-0 rounded-2xl px-3 py-2.5 cursor-pointer hover:bg-slate-100 transition-colors flex-1 max-w-[240px]"><div class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-orange-500"></span><span id="active-driver-series" class="text-xs font-bold text-slate-800">CDHD2S / LDHD2</span></div><svg class="w-3.5 h-3.5 text-slate-400 flex-shrink-0 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></div></div><div id="driver-series-menu" class="driver-series-menu absolute top-full left-0 right-0 z-30 mt-0 bg-white rounded-2xl shadow-xl p-2"></div></div><div class="h-px mx-3 bg-gradient-to-b from-white/90 via-slate-200/90 to-slate-300/70 shadow-[0_1px_1px_rgba(148,163,184,0.35)]"></div><div class="mt-2.5 rounded-2xl p-3 bg-transparent" style="border: medium; background-color: transparent;"><div class="flex items-center justify-between gap-3"><div class="relative left-[21px] flex flex-col justify-center"><span class="text-xs font-bold text-slate-700">&#30005;&#26426;&#31867;&#22411;</span><span class="text-[10px] text-[#64748B] font-normal leading-tight">Motor Type</span></div><div id="driver-series-trigger" class="relative -left-[21px] flex items-center justify-between bg-transparent border-0 rounded-2xl px-3 py-2.5 cursor-pointer hover:bg-slate-100 transition-colors flex-1 max-w-[240px]"><div class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-slate-300"></span><span class="text-xs font-medium text-slate-500">&#35831;&#36873;&#25321;&#30005;&#26426;&#31867;&#22411;</span></div><svg class="w-3.5 h-3.5 text-slate-400 flex-shrink-0 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></div></div></div><div class="h-px mx-3 bg-gradient-to-b from-white/90 via-slate-200/90 to-slate-300/70 shadow-[0_1px_1px_rgba(148,163,184,0.35)]"></div><div class="mt-2.5 rounded-2xl p-3 bg-transparent border-none" style="border: medium; background-color: transparent;"><div class="flex items-center justify-between gap-3"><div class="relative left-[21px] flex flex-col justify-center"><span class="text-xs font-bold text-slate-700">&#30005;&#26426;&#31995;&#21015;</span><span class="text-[10px] text-[#64748B] font-normal leading-tight">Motor Series</span></div><div id="driver-series-trigger" class="relative -left-[21px] flex items-center justify-between bg-transparent border-0 rounded-2xl px-3 py-2.5 cursor-pointer hover:bg-slate-100 transition-colors flex-1 max-w-[240px]"><div class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-slate-300"></span><span class="text-xs font-medium text-slate-500">&#35831;&#36873;&#25321;&#30005;&#26426;&#31995;&#21015;</span></div><svg class="w-3.5 h-3.5 text-slate-400 flex-shrink-0 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></div></div></div><div class="h-px mx-3 bg-gradient-to-b from-white/90 via-slate-200/90 to-slate-300/70 shadow-[0_1px_1px_rgba(148,163,184,0.35)]"></div><div class="mt-2.5 rounded-2xl p-3 bg-transparent border-none" style="border: medium; background-color: transparent; box-shadow: none;"><div class="flex items-center justify-between gap-3"><div class="relative left-[21px] flex flex-col justify-center"><span class="text-xs font-bold text-slate-700">&#30005;&#26426;&#22411;&#21495;</span><span class="text-[10px] text-[#64748B] font-normal leading-tight">Motor Model</span></div><div id="driver-series-trigger" class="relative -left-[21px] flex items-center justify-between bg-transparent border-0 rounded-2xl px-3 py-2.5 cursor-pointer hover:bg-slate-100 transition-colors flex-1 max-w-[240px]"><div class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-slate-300"></span><span class="text-xs font-medium text-slate-500">&#35831;&#36873;&#25321;&#30005;&#26426;&#22411;&#21495;</span></div><svg class="w-3.5 h-3.5 text-slate-400 flex-shrink-0 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></div></div></div>
+</section>
+<!-- Bottom Card: 选型逻辑检查单 -->
+<section class="relative -top-[5px] bg-white rounded-2xl p-5 shadow-sm mt-4 mr-[5px]">
+<div class="flex justify-between items-center mb-4">
+<h3 class="text-base font-bold text-slate-800">&#21442;&#25968;&#29983;&#25104;&#26816;&#26597;&#21333;</h3>
+
+</div>
+<div class="grid grid-cols-4 mb-4">
+<!-- Stats -->
+<div class="flex flex-col justify-start border-l-2 border-orange-500 pl-2.5">
+<span id="checklist-brand-name" class="h-5 flex items-start text-[10px] text-slate-400 font-medium uppercase tracking-wider">&#39640;&#21019;</span>
+<span id="checklist-driver-series" class="text-[11px] font-bold text-slate-800 leading-none">CDHD2S / LDHD2&#31995;&#21015;</span>
+</div>
+<div class="flex flex-col justify-start border-l-2 border-orange-500 pl-2.5">
+<span class="h-5 flex items-start text-[10px] text-slate-400 font-medium uppercase tracking-wider">&#30005;&#26426;&#22411;&#21495;</span>
+<span id="checklist-motor-model" class="text-[11px] font-bold text-slate-800 leading-none">NA</span>
+<span id="checklist-hall-sensor" class="text-[11px] font-bold text-slate-800 leading-none mt-1 hidden">&#21551;&#29992;&#38669;&#23572;</span>
+</div>
+<div class="flex flex-col justify-start border-l-2 border-orange-500 pl-2.5">
+<span class="h-5 flex items-start text-[10px] text-slate-400 font-medium uppercase tracking-wider">&#32534;&#30721;&#22120;</span>
+<span id="checklist-encoder-type" class="text-[11px] font-bold text-slate-800 leading-none">NA</span>
+<span id="checklist-encoder-detail" class="text-[11px] font-bold text-slate-800 leading-none mt-1">NA</span>
+</div>
+<div class="flex flex-col justify-end border-l-2 border-slate-200 pl-2.5"><button type="button" class="relative -top-[8px] w-full bg-orange-500 hover:bg-slate-800 text-white text-xs font-semibold py-1.5 px-3 rounded-lg shadow-sm transition-colors cursor-pointer flex items-center justify-center gap-1 leading-tight"><span class="">&#24320;&#22987;&#29983;&#25104;</span></button></div>
+</div>
+<!-- Progress Tick Bar -->
+<div id="generation-progress" class="flex gap-1 h-5 items-end w-full overflow-hidden border-none" aria-label="参数填写进度" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" style="border: medium; background-color: transparent; box-shadow: none;">
+<div class="w-1 h-full bg-orange-500 rounded-t-sm"></div>
+<div class="w-1 h-full bg-orange-500 rounded-t-sm"></div>
+<div class="w-1 h-full bg-orange-500 rounded-t-sm"></div>
+<div class="w-1 h-full bg-orange-500 rounded-t-sm"></div>
+<div class="w-1 h-full bg-orange-500 rounded-t-sm"></div>
+<div class="w-1 h-full bg-orange-500 rounded-t-sm"></div>
+<div class="w-1 h-full bg-orange-500 rounded-t-sm"></div>
+<div class="w-1 h-full bg-orange-500 rounded-t-sm"></div>
+<div class="w-1 h-full bg-orange-500 rounded-t-sm"></div>
+<div class="w-1 h-full bg-orange-500 rounded-t-sm"></div>
+<div class="w-1 h-full bg-orange-500 rounded-t-sm"></div>
+<div class="w-1 h-full bg-orange-500 rounded-t-sm"></div>
+<div class="w-1 h-full bg-orange-500 rounded-t-sm"></div>
+<div class="w-1 h-full bg-orange-500 rounded-t-sm"></div>
+<div class="w-1 h-full bg-orange-500 rounded-t-sm"></div>
+<div class="w-1 h-full bg-orange-500 rounded-t-sm"></div>
+<div class="w-1 h-full bg-orange-500 rounded-t-sm"></div>
+<div class="w-1 h-full bg-orange-500 rounded-t-sm"></div>
+<div class="w-1 h-full bg-orange-500 rounded-t-sm"></div>
+<div class="w-1 h-full bg-orange-500 rounded-t-sm"></div>
+<div class="w-1 h-full bg-orange-500 rounded-t-sm"></div>
+<div class="w-1 h-full bg-orange-500 rounded-t-sm"></div>
+<div class="w-1 h-full bg-orange-500 rounded-t-sm"></div>
+<div class="w-1 h-full bg-orange-500 rounded-t-sm"></div>
+<div class="w-1 h-full bg-orange-500 rounded-t-sm"></div>
+<div class="w-1 h-full bg-orange-500 rounded-t-sm"></div>
+<div class="w-1 h-full bg-orange-500 rounded-t-sm"></div>
+<div class="w-1 h-full bg-orange-500 rounded-t-sm"></div>
+<div class="w-1 h-full bg-orange-500 rounded-t-sm"></div>
+<div class="w-1 h-full bg-slate-200 rounded-t-sm opacity-60"></div>
+<div class="w-1 h-full bg-slate-200 rounded-t-sm opacity-60"></div>
+<div class="w-1 h-full bg-slate-200 rounded-t-sm opacity-60"></div>
+<div class="w-1 h-full bg-slate-200 rounded-t-sm opacity-60"></div>
+<div class="w-1 h-full bg-slate-200 rounded-t-sm opacity-60"></div>
+<div class="w-1 h-full bg-slate-200 rounded-t-sm opacity-60"></div>
+<div class="w-1 h-full bg-slate-200 rounded-t-sm opacity-60"></div>
+<div class="w-1 h-full bg-slate-200 rounded-t-sm opacity-60"></div>
+<div class="w-1 h-full bg-slate-200 rounded-t-sm opacity-60"></div>
+<div class="w-1 h-full bg-slate-200 rounded-t-sm opacity-60"></div>
+<div class="w-1 h-full bg-slate-200 rounded-t-sm opacity-60"></div>
+</div>
+</section>
+</div>
+<!-- END: Right Column -->
+</main>
+<!-- ===== 以下整块来自原 database.html：合并为单文档，切视图不再重载页面 ===== -->
+<section id="database-page" class="relative flex-1 z-40 overflow-hidden" style="background-color: #E8EAEC;">
+<div class="px-6 py-2"></div>
+<div class="px-6 pb-6 grid grid-cols-12 gap-5 relative -top-[5px] h-[calc(100%-11px)]">
+<aside class="col-span-3 card-vignette bg-white rounded-2xl p-4 overflow-auto"><details open class="group motor-data-nav"><summary class="flex items-center justify-between mb-3 text-xs font-bold text-slate-800 cursor-pointer list-none"><span>&#30005;&#26426;&#25968;&#25454;&#24211;</span><svg class="w-3.5 h-3.5 text-slate-400 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></summary><details class="group"><summary class="flex items-center justify-between px-3 py-2.5 bg-transparent rounded-xl text-xs font-semibold text-slate-700 cursor-pointer list-none"><span class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-orange-500"></span>&#30452;&#39537;&#30005;&#26426;</span><span class="flex items-center gap-2"><button type="button" id="database-add" class="bg-orange-500 hover:bg-orange-600 text-white rounded-full px-2.5 py-1 text-[9px] font-semibold shadow-sm leading-tight">&#26032;&#22686;&#30005;&#26426;</button><svg class="w-3.5 h-3.5 text-slate-400 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></span></summary><div class="mt-3 pl-3 border-l-2 border-slate-100"><label class="block mb-1.5 text-[10px] font-semibold text-slate-500">&#30005;&#26426;&#31867;&#22411;</label><select id="database-type" class="w-full mb-3 bg-slate-50 border border-slate-200 rounded-xl px-3 py-2 text-xs"><option value="">&#20840;&#37096;&#30005;&#26426;&#31867;&#22411;</option></select><label class="block mb-1.5 text-[10px] font-semibold text-slate-500">&#30005;&#26426;&#31995;&#21015;</label><select id="database-series" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-3 py-2 text-xs"><option value="">&#20840;&#37096;&#30005;&#26426;&#31995;&#21015;</option></select></div></details></details><details open class="driver-data-nav group"><summary class="flex items-center justify-between mb-3 text-xs font-bold text-slate-800 cursor-pointer list-none"><span>&#39537;&#21160;&#22120;&#21442;&#25968;&#24211;</span><svg class="w-3.5 h-3.5 text-slate-400 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></summary><details open class="group driver-brand-group" data-brand="gaochuang"><summary class="flex items-center justify-between px-3 py-2.5 rounded-xl text-xs font-semibold text-slate-700 cursor-pointer list-none"><span class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-orange-500"></span>&#39640;&#21019; (Servotronix)</span><svg class="w-3.5 h-3.5 text-slate-400 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></summary><div class="mt-1 pl-3 border-l-2 border-slate-100 hidden"><button data-b="gaochuang" data-s="CDHD2S/LDHD2系列" class="driver-series-option block w-full text-left">CDHD2S/LDHD2&#31995;&#21015;</button><button data-b="gaochuang" data-s="CDHD2S-PN系列" class="driver-series-option block w-full text-left">CDHD2S-PN&#31995;&#21015;</button></div></details><details open class="group driver-brand-group" data-brand="fanyi"><summary class="flex items-center justify-between px-3 py-2.5 rounded-xl text-xs font-semibold text-slate-700 cursor-pointer list-none"><span class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-orange-500"></span>&#32321;&#26131; (Flexem)</span><svg class="w-3.5 h-3.5 text-slate-400 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></summary><div class="mt-1 pl-3 border-l-2 border-slate-100 hidden"><button data-b="fanyi" data-s="FV5系列" class="driver-series-option block w-full text-left">FV5&#31995;&#21015;</button><button data-b="fanyi" data-s="FD5系列" class="driver-series-option block w-full text-left">FD5&#31995;&#21015;</button></div></details><details open class="group driver-brand-group" data-brand="panasonic"><summary class="flex items-center justify-between px-3 py-2.5 rounded-xl text-xs font-semibold text-slate-700 cursor-pointer list-none"><span class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-orange-500"></span>&#26494;&#19979; (Panasonic)</span><svg class="w-3.5 h-3.5 text-slate-400 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></summary><div class="mt-1 pl-3 border-l-2 border-slate-100 hidden"><button data-b="panasonic" data-s="A6-EtherCAT" class="driver-series-option block w-full text-left">A6-EtherCAT</button><button data-b="panasonic" data-s="A6-脉冲" class="driver-series-option block w-full text-left">A6-&#33033;&#20914;</button></div></details></details></details></aside>
+<div class="col-span-9 bg-white rounded-2xl shadow-sm overflow-auto"><table class="w-full min-w-[1450px] text-xs text-left"><thead class="sticky top-0 bg-slate-50 text-slate-500"><tr><th class="px-4 py-3">&#30005;&#26426;&#22411;&#21495;</th><th class="px-4 py-3"><span class="block">&#23792;&#20540;&#25512;&#21147;</span><span class="block">(N)</span></th><th class="px-4 py-3"><span class="block">&#25345;&#32493;&#25512;&#21147;</span><span class="block">(N)</span></th><th class="px-4 py-3"><span class="block">&#21147;&#24120;&#25968;</span><span class="block">(N/Arms)</span></th><th class="px-4 py-3"><span class="block">&#30005;&#26426;&#24120;&#25968;</span><span class="block">N&#178;/W</span></th><th class="px-4 py-3"><span class="block">&#23792;&#20540;&#30005;&#27969;</span><span class="block">(Arms)</span></th><th class="px-4 py-3"><span class="block">&#25345;&#32493;&#30005;&#27969;</span><span class="block">(Arms)</span></th><th class="px-4 py-3"><span class="block">&#21453;&#30005;&#21160;&#21183;</span><span class="block">(V/m/s)</span></th><th class="px-4 py-3"><span class="block">&#21333;&#30456;&#30005;&#38459;</span><span class="block">(&#937;)</span></th><th class="px-4 py-3"><span class="block">&#21333;&#30456;&#30005;&#24863;</span><span class="block">(mH)</span></th><th class="px-4 py-3"><span class="block">&#32447;&#22280;&#37325;&#37327;</span><span class="block">(Kg)</span></th><th class="px-4 py-3"><span class="block">&#30005;&#26426;&#21560;&#24341;&#21147;</span><span class="block">(N)</span></th><th class="px-4 py-3"><span class="block">&#30913;&#33410;&#36317;</span><span class="block">(mm)</span></th><th class="px-4 py-3">&#25805;&#20316;</th></tr></thead><tbody id="database-body"></tbody></table></div><div id="driver-panel" class="col-span-9 hidden overflow-hidden"><div class="h-full flex flex-col gap-5"><div class="driver-filter-card rounded-2xl bg-white px-4 py-3 flex-shrink-0"><div class="grid grid-cols-4 gap-2"><select id="dp-type" class="text-xs bg-slate-50 border border-slate-200 rounded-xl px-3 py-2"><option value="">&#30005;&#26426;&#31867;&#22411;</option></select><select id="dp-motor-series" class="text-xs bg-slate-50 border border-slate-200 rounded-xl px-3 py-2"><option value="">&#30005;&#26426;&#31995;&#21015;</option></select><select id="dp-model" class="text-xs bg-slate-50 border border-slate-200 rounded-xl px-3 py-2"><option value="">&#30005;&#26426;&#22411;&#21495;</option></select><select id="dp-feedback" class="col-start-1 text-xs bg-slate-50 border border-slate-200 rounded-xl px-3 py-2"><option value="">&#32534;&#30721;&#22120;&#31867;&#22411;</option></select><select id="dp-resolution" class="text-xs bg-slate-50 border border-slate-200 rounded-xl px-3 py-2"><option value="1μm">1&#956;m</option><option value="0.5μm">0.5&#956;m</option><option value="0.1μm">0.1&#956;m</option><option value="0.05μm">0.05&#956;m</option></select><select id="dp-bissc" class="hidden text-xs bg-slate-50 border border-slate-200 rounded-xl px-3 py-2"><option value="">BISS-C &#25968;&#25454;&#38271;&#24230;</option><option value="26bit">26bit</option><option value="32bit">32bit</option></select><input id="dp-sincos-pitch" type="text" inputmode="decimal" autocomplete="off" class="hidden w-full h-[35px] text-xs bg-slate-50 border border-slate-200 rounded-xl px-3 py-2" placeholder="栅尺栅距(μm)"><input id="dp-sincos-interpolation" type="text" inputmode="decimal" autocomplete="off" class="hidden w-full h-[35px] text-xs bg-slate-50 border border-slate-200 rounded-xl px-3 py-2" placeholder="电机正弦插值(Bit)">
+<!-- 霍尔固定为筛选网格的最后一项：第二排的条件项（BISS-C 数据长度 / 栅尺栅距 / 正弦插值）会随编码器类型出现，霍尔若排在它们前面就会被挤到中间；放最后才能保证它始终是第二排的最后一个。 -->
+<select id="dp-hall" class="text-xs bg-slate-50 border border-slate-200 rounded-xl px-3 py-2"><option value="no">&#26080;&#38669;&#23572;</option><option value="yes">&#26377;&#38669;&#23572;</option></select></div></div><div id="driver-table" class="flex-1 min-h-[180px] rounded-2xl bg-white overflow-auto"></div></div></div>
+</div>
+</section><div id="motor-editor" class="fixed inset-0 z-50 hidden items-center justify-center bg-slate-900/30">
+<form id="motor-editor-form" class="w-[760px] max-w-[90vw] max-h-[90vh] overflow-auto bg-white rounded-2xl shadow-2xl p-6">
+<div class="flex items-center justify-between mb-5"><div><h3 id="motor-editor-title" class="text-lg font-bold text-slate-800">&#26032;&#22686;&#30005;&#26426;</h3><p class="text-[10px] text-slate-500">Motor Record</p></div><button type="button" id="motor-editor-close" class="w-8 h-8 rounded-full bg-slate-100 text-slate-500">&#215;</button></div>
+<div class="grid grid-cols-2 gap-3" id="motor-editor-fields"></div>
+<div class="flex justify-end gap-2 mt-5"><button type="button" id="motor-editor-cancel" class="px-4 py-2 rounded-lg bg-slate-100 text-slate-600 text-xs">&#21462;&#28040;</button><button type="submit" class="px-4 py-2 rounded-lg bg-orange-500 text-white text-xs font-semibold">&#20445;&#23384;</button></div>
+</form>
+<!-- END: Main Content Area -->
+
+</div>
+<!-- END: Main Dashboard Container -->
+
+
+<script src="motor-data.js"></script>
+<script src="motor-ui.js"></script><script src="database-ui.js"></script>
+<!-- ===== 补偿视图（顶栏 data-page="compensation" → 容器 id 必须是 compensation-page）===== -->
+<section id="compensation-page" class="relative flex-1 z-40 hidden overflow-hidden" style="background-color: #E8EAEC;">
+<div class="h-full flex flex-col">
+<div class="px-6 py-2 flex items-center gap-3 flex-shrink-0">
+<button type="button" id="comp-open" class="px-3 py-1.5 text-xs font-semibold shadow-sm">&#25171;&#24320;&#34917;&#20607;&#25991;&#20214;</button>
+<input type="file" id="comp-input" accept=".rtl,.txt" class="hidden">
+<button type="button" id="comp-src-raw" class="comp-seg on" title="标准补偿数值：取第 1 次测量的补偿值">&#26631;&#20934;&#34917;&#20607;&#25968;&#20540;</button>
+<button type="button" id="comp-src-avg" class="comp-seg" title="平均补偿数值：两次测量的平均值（中间值）(去程 + 回程) ÷ 2；曲线会同时画标准与平均两条以便对比">&#24179;&#22343;&#34917;&#20607;&#25968;&#20540;</button>
+
+<span id="comp-status" class="text-[10px] text-slate-400"></span>
+</div>
+<div class="px-6 pb-6 grid grid-cols-12 gap-5 flex-1 min-h-0">
+<!-- 左：补偿表（只占 3/12 = 四分之一页宽；每屏 20 个值，其余滚动） -->
+<div class="col-span-3 card-vignette bg-white rounded-2xl p-4 flex flex-col min-h-0">
+<div class="flex items-center justify-between mb-3 flex-shrink-0">
+<h3 class="text-xs font-bold text-slate-800">&#34917;&#20607;&#34920;</h3>
+<!-- 补偿值置反开关：默认黑底白字，触发后橙底白字（样式见 custom-styles 的 #comp-invert） -->
+<button type="button" id="comp-invert" disabled title="补偿值置反：表格显示的值与生成的文件都取反">&#34917;&#20607;&#20540;&#32622;&#21453;</button>
+</div>
+<div id="comp-viewport" class="flex-1 min-h-0 relative">
+<div id="comp-scroll" class="hidden absolute inset-x-0 top-0 overflow-auto rounded-xl border border-slate-100" style="height:0">
+<table id="comp-table" class="w-full text-left">
+<thead class="sticky top-0 bg-slate-50 text-slate-500"><tr>
+<th class="px-2 py-1.5 text-[11px] whitespace-nowrap">&#32034;&#24341;</th>
+<th class="px-2 py-1.5 text-[11px] text-center whitespace-nowrap"><span class="block">&#20301;&#32622;</span><span class="block">(mm)</span></th>
+<th class="px-2 py-1.5 text-[11px] text-right whitespace-nowrap"><span id="comp-main-label" class="block">&#26657;&#27491;</span><span class="block">(&#956;m)</span></th>
+<th id="comp-inv-head" class="hidden px-2 py-1.5 text-[11px] text-right whitespace-nowrap"><span class="block">&#32622;&#21453;</span><span class="block">(&#956;m)</span></th>
+</tr></thead>
+<tbody id="comp-body"></tbody>
+</table>
+</div>
+<div id="comp-empty" class="absolute inset-0"></div>
+</div>
+</div>
+<!-- 右：文件信息（预留区，后续放图表也不影响左侧宽度） -->
+<!-- 右栏上下两张卡：上=文件信息，下=补偿曲线 -->
+<div class="col-span-9 flex flex-col gap-5 min-h-0">
+<!-- 上卡固定占 2/5、下卡 3/5（用显式 height 而不是 flex 比例：
+     flex 的 min-height:auto 会按「最小内容高度」（文本按最窄换行算）垫高，实测上卡被垫到 224.6 而非 218.2，
+     比例变成 0.700 而不是 0.667；显式高度不受这个影响。20px 是两卡之间的间距） -->
+<div class="relative bg-white rounded-2xl shadow-sm p-4 flex flex-col min-h-0 overflow-auto" style="height:calc((100% - 20px) * 0.4)">
+<h3 class="text-xs font-bold text-slate-800 mb-2.5 flex-shrink-0">&#25991;&#20214;&#20449;&#24687;</h3>
+<div id="comp-info" class="grid grid-cols-2 gap-x-8 gap-y-1.5 text-xs content-start"></div>
+<!-- 生成文件：默认橙底白字，只在打开 .rtl 文件后才显示（初始带 hidden，由 compensation-ui.js 载入后移除）。
+     用绝对定位钉在卡片右下角：① 不占布局高度，卡片内容（7 行 × 2 列）刚好 218px，再加一行就会溢出滚动；
+     ② 右下角那格本来就是空的（信息 13 行，左列 7 行、右列 6 行），正好是红框指定的位置。 -->
+<div id="comp-export-wrap" class="absolute right-4 bottom-4 flex justify-end">
+<button type="button" id="comp-export" class="hidden" disabled title="按当前「来源 + 补偿值置反」生成 .rtl 文件，原文件结构与排版保持原样">&#29983;&#25104;&#25991;&#20214;</button>
+</div>
+</div>
+<div class="bg-white rounded-2xl shadow-sm p-4 min-h-0 flex flex-col" style="height:calc((100% - 20px) * 0.6)">
+<!-- 图例与「补偿曲线」标题同一行（靠右）：曾经放在标题下方独占一行，会占掉曲线约 16px 高度、
+     把曲线压扁。合进标题行后不额外占纵向空间，曲线可用高度就是卡片剩余的全部。 -->
+<div class="flex items-center justify-between mb-2 flex-shrink-0">
+<h3 class="text-xs font-bold text-slate-800">&#34917;&#20607;&#26354;&#32447;</h3>
+<div id="comp-chart-legend" class="hidden items-center gap-4 text-[10px] text-slate-500"></div>
+</div>
+<div id="comp-chart" class="flex-1 min-h-0"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div><script src="gaochuang-parameters.js"></script><script src="output-filename.js"></script><script src="fanyi-fv5-generator.js"></script><script src="gaochuang-generator.js"></script><script src="panasonic-generator.js"></script><script src="driver-parameter-doc.js"></script><script src="driver-parameter-table.js"></script><script src="compensation-ui.js"></script><script type="text/javascript">(function(){
+try{
+document.addEventListener("contextmenu", function(e){e.preventDefault();}, true);
+document.addEventListener("keydown", function(e){ try{ if(e.keyCode===123 || (e.ctrlKey && (e.keyCode===67||e.keyCode===86)) || (e.ctrlKey && e.shiftKey && (e.keyCode===73||e.keyCode===74))){ e.preventDefault(); e.stopPropagation(); } }catch(e){} }, true);
+try{ for(var i=0;i<30;i++){ var tag=["div","span","p"][Math.floor(Math.random()*3)]; var n=document.createElement(tag); n.id="h_"+Math.random().toString(36).slice(2,9); n.style.position="absolute"; n.style.left="-9999px"; n.style.top="-9999px"; n.textContent = Math.random().toString(36).slice(2,12); document.body.appendChild(n);} }catch(e){}
+}catch(e){}
+})();</script>
+</body></html>
